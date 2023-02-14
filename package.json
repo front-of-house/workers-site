@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "workers-site",
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler publish",
+    "client": "tsc src/client/index.ts -outFile src/public/static/index.js",
+    "test": "echo 'test'",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230115.0",
+    "typescript": "^4.9.5",
+    "wrangler": "^2.9.0"
+  },
+  "dependencies": {
+    "@presta/html": "^0.2.5",
+    "deepmerge": "^4.3.0",
+    "hono": "^2.7.7",
+    "hypobox": "^2.3.0",
+    "hyposcript": "^1.2.0",
+    "hypostyle": "^3.3.2"
+  }
+}
