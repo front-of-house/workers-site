@@ -3,7 +3,7 @@
   "name": "workers-site",
   "scripts": {
     "start": "wrangler dev",
-    "deploy": "wrangler publish",
+    "push": "wrangler publish",
     "client": "tsc src/client/index.ts -outFile src/public/static/index.js",
     "test": "echo 'test'",
     "typecheck": "tsc --noEmit"

@@ -7,7 +7,7 @@ Minimalist approach to making a website on the Cloudflare Supercloud.
 Clone this repo, then:
 
 ```
-pnpm i && pnpm client && pnpm deploy
+pnpm i && pnpm client && pnpm push
 ```
 
 ## License
