@@ -16,7 +16,7 @@
   "dependencies": {
     "@presta/html": "^0.2.5",
     "deepmerge": "^4.3.0",
-    "hono": "^2.7.7",
+    "hono": "^4.7.7",
     "hyposcript": "^1.2.0"
   }
 }
