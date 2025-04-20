@@ -4,3 +4,4 @@ node_modules/
 dist
 .pnpm*
 src/public/static/index.js
+.wrangler
