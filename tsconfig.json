@@ -2,9 +2,8 @@
   "include": ["src", "env.d.ts"],
   "compilerOptions": {
     "types": ["@cloudflare/workers-types"],
-    "jsx": "react",
-    "jsxFactory": "h",
-    "jsxFragmentFactory": "h",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"]

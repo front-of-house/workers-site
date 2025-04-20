@@ -1,13 +1,13 @@
-import { Hono } from "hono";
+import { Hono } from 'hono'
 
-import { page } from "~/utils/page";
+import { route } from '~/framework'
 
-import { Page as Home } from "~/pages/Home";
-import { Page as About } from "~/pages/About";
+import * as Home from '~/routes/Home'
+import * as About from '~/routes/About'
 
 /**
  * Register routes
  */
 export default new Hono()
-  .all("/about", page(About))
-  .all("/", page(Home));
+  .all('/', ...route(Home))
+  .all('/about', ...route(About))
