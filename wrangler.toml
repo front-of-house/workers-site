@@ -1,9 +1,0 @@
-name = "worker-site"
-main = "src/index.tsx"
-
-account_id = '0058269086e8cbec458f02e3e7bd036b'
-compatibility_date = "2022-12-03"
-# route = 'worker.com/*'
-
-[site]
-  bucket = "./src/public"

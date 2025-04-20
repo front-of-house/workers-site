@@ -1,6 +1,5 @@
 import { configure } from "hypobox";
 import { Hono } from "hono";
-import { serveStatic } from "hono/serve-static.module";
 
 import { hypostyle } from "~/styles";
 import { page } from "~/utils/page";
@@ -18,7 +17,6 @@ configure(hypostyle);
  * Register routes
  */
 export default new Hono()
-  .use("/static/*", serveStatic({ root: "./" }))
   .all("/pages/:slug", page(NestedPage))
   .all("/about", page(About))
   .all("/", page(Home));

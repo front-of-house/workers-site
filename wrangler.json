@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "worker-site",
+  "main": "src/index.tsx",
+  "compatibility_date": "2025-04-20",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "./public/"
+  },
+  "kv_namespaces": [
+  ],
+  "dev": {
+    "port": 4000
+  }
+}
+
